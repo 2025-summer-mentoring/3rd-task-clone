@@ -29,7 +29,7 @@
 |perf|성능 개선|
 |chore|그 외 자잘한 수정|
 
-EX) feat : header 개발
+EX) feat : footer 개발
 
 ## Code Convention
 1. mission 폴더 안에 있는 index.html, style.css, script.js 파일을 모두 사용할 수 있도록 합니다.

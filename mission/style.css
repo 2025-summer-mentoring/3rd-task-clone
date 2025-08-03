@@ -44,6 +44,9 @@ img {
     justify-content: center;
     border-bottom: 1px #eee solid;
     padding-top: 35px;
+    position: sticky;
+    top: 0;
+    background-color: white;
 }
 
 #under-header-contents {
@@ -119,12 +122,15 @@ img {
 }
 
 #category {
-    padding-right: 22px;
-}
-
-#category>img {
+    background-image: url("../assets/hamberger_button.png");
+    background-size: cover;
     width: 20px;
     height: 16px;
+    margin-right: 30px;
+}
+
+#category:hover {
+    background-image: url("../assets/hamberger_button_on.png");
 }
 
 #seller-center {

@@ -9,7 +9,7 @@
   {
     id: 2,
     img: "https://raw.githubusercontent.com/2025-summer-mentoring/3rd-task-clone/main/assets/tire.png",
-    name: "미쉐린 A급 중고타이어",
+    name: "미쉐린 A급중고타이어",
     price: 300000,
     date: 1
   },

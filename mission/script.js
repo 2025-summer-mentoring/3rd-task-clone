@@ -23,3 +23,27 @@ preprocessed_data.forEach((element) => {
     </div>
 </a></article>`;
 });
+
+const category_button = document.getElementById("category");
+const category_tab = document.getElementsByClassName("categorys")[0];
+let category_on = false;
+
+function hold_category() {
+    category_on = true;
+    category_tab.id = "cateon";
+}
+
+function dehold_category() {
+    category_on = false;
+    setTimeout(() => {
+            if (category_on === false) category_tab.id = "";
+            console.log(category_on)
+        }, 500
+    )
+}
+
+category_button.addEventListener("mouseover", hold_category)
+category_button.addEventListener("mouseleave", dehold_category)
+
+category_tab.addEventListener("mouseover", hold_category)
+category_tab.addEventListener("mouseleave", dehold_category)

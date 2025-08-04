@@ -53,6 +53,7 @@ img {
     display: flex;
     justify-content: start;
     flex-direction: column;
+    position: relative;
 }
 
 #base-header {
@@ -136,6 +137,143 @@ img {
 #seller-center {
     font-size: 13px;
     font-weight: 700;
+}
+
+aside {
+    position: absolute;
+    bottom: -245px;
+    right: -102px;
+    width: 90px;
+    height: 282px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#bookmarked {
+    border: 1px black solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 90px;
+    height: 55px;
+}
+
+#bookmarked>h6 {
+    color: #666;
+    font-size: 12px;
+}
+
+#love {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#love>img {
+    width: 9px;
+    height: 9px;
+}
+
+#love-count {
+    margin-left: 6px;
+    font-size: 12px;
+    color: #aaa;
+}
+
+#recentry {
+    border: 1px #aaa solid;
+    height: 170px;
+}
+
+#recentry-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+#recentry-title>p {
+    color: #666;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 5px 0;
+}
+
+#recentry-title>div {
+    width: 38px;
+    border-bottom: 2px #666 dotted;
+}
+
+#recentry-contents {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 32px;
+}
+
+#recentry-contents>img {
+    width: 28px;
+}
+
+#recentry-contents>p {
+    text-align: center;
+    font-size: 12px;
+    color: #aaa;
+    width: 70px;
+}
+
+#move-top {
+    text-align: center;
+    padding: 10px 0;
+    border: 1px #ccc solid;
+    font-size: 12px;
+    font-weight: 500;
+    color: #666;
+}
+
+#move-top:hover {
+    cursor: pointer;
+}
+
+.categorys {
+    display: none;
+    border: 1px #eee solid;
+    width: 239px;
+    position: absolute;
+    top: 107px;
+    background-color: white;
+}
+
+#cateon {
+    display: block;
+}
+
+.categorys>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    border-bottom: 1px #eee solid;
+}
+
+.categorys>div>h3 {
+    font-size: 14px;
+    width: 180px;
+}
+
+#categorys-list {
+    height: 380px;
+    list-style: none;
+    overflow-y: scroll;
+    padding: 20px 0 20px 30px;
+}
+
+#categorys-list * {
+    font-size: 14px;
+    margin: 8px 0;
 }
 
 main {

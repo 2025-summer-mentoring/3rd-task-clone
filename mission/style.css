@@ -381,4 +381,77 @@ nav>div {
 footer {
     border-top: 1px #eee solid;
     padding: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+footer * {
+    color: #7f7f7f;
+}
+
+footer a {
+    font-size: 12px;
+    margin-right: 10px;
+}
+
+footer p {
+    font-size: 12px;
+    margin: 8px 0;
+}
+
+footer h4 {
+    font-size: 14px;
+    color: #666666;
+}
+
+footer h3 {
+    font-size: 25px;
+    color: #666666;
+    margin: 0;
+}
+
+#upper-footer {
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px #eee solid;
+}
+
+#upper-footer>div {
+    width: 50%;
+}
+
+#upper-footer a {
+    text-decoration: underline;
+}
+
+.footer-content {
+    margin-bottom: 40px;
+}
+
+#customer-service {
+    display: flex;
+}
+
+#under-footer {
+    display: flex;
+    padding-top: 10px;
+}
+
+#under-footer>a, #under-footer>div {
+    width: 50%;
+}
+
+#isms {
+    display: flex;
+    align-items: start;
+}
+
+#isms>img {
+    width: 31px;
+    height: 28px;
+}
+
+.cert-content {
+    margin: 0 10px;
+    font-size: 11px;
 }

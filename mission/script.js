@@ -38,7 +38,7 @@ function dehold_category() {
     setTimeout(() => {
             if (category_on === false) category_tab.id = "";
             console.log(category_on)
-        }, 500
+        }, 300
     )
 }
 

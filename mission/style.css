@@ -290,10 +290,24 @@ main {
 
 #ad {
     margin-top: 20px;
+    position: relative;
 }
 
 #ad img {
     width: 1024px;
+}
+
+#ad_qrcode {
+    position: absolute;
+    padding: 8px;
+    background-color: white;
+    top: 57px;
+    left: 155px;
+}
+
+#ad_qrcode>img {
+    width: 78px;
+    height: 78px;
 }
 
 #items {

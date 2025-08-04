@@ -281,7 +281,7 @@ main {
     justify-content: start;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 100px;
+    margin-bottom: 10px;
 }
 
 #ads img {
@@ -349,4 +349,36 @@ figure {
 .upload-date {
     color: #666;
     font-size: 12px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    border-top: 1px #eee solid;
+}
+
+nav>div {
+    display: flex;
+    justify-content: start;
+}
+
+.navigater {
+    padding: 0 23px;
+    color: #333;
+    font-size: 13px;
+    border-right: 1px #ccc solid;
+}
+
+.navigater:first-of-type {
+    padding-left: 0;
+}
+
+.navigater:last-of-type {
+    border-right: none;
+}
+
+footer {
+    border-top: 1px #eee solid;
+    padding: 50px;
 }

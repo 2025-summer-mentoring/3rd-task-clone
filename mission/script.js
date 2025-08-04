@@ -2,7 +2,7 @@
   {
     id: 1,
     img: "https://raw.githubusercontent.com/2025-summer-mentoring/3rd-task-clone/main/assets/kickboard.png",
-    name: "위페드 미니9 전동킥보드",
+    name: "위페드 미니9전동킥보드",
     price: 1100000,
     date: 3
   },

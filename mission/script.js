@@ -47,3 +47,8 @@ category_button.addEventListener("mouseleave", dehold_category)
 
 category_tab.addEventListener("mouseover", hold_category)
 category_tab.addEventListener("mouseleave", dehold_category)
+
+const move_top = document.getElementById("move-top");
+move_top.addEventListener("click", () => {
+    window.scrollTo({top: 0, behavior: 'smooth'});
+})

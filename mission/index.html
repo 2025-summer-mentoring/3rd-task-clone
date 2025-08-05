@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../assets/favicon.ico">
     <link rel="stylesheet" href="./style.css">
+    <script src="/data.js"></script>
     <title>번개장터</title>
 </head>
 <body>
@@ -71,7 +72,7 @@
                         </div>
                     </div>
                     <div class="nav-side-item">
-                        <button class="nav-side-item-top">TOP</button>
+                        <button class="nav-side-item-top" id="nav-side-item-top">TOP</button>
                     </div>
                 </div>
             </aside>
@@ -80,9 +81,9 @@
         <div class="content">
             <div class="slide-ad">
                 <div class="slide-box">
-                    <button type="button" data-role="none" class="slide-arrow slide-prev" style="display: block;">Previous</button>
+                    <button type="button" data-role="none" class="slide-arrow slide-prev" id="slide-prev" style="display: block;">Previous</button>
                     <div class="slide-list">
-                        <div class="slide-track" style="width: max-content;">
+                        <div class="slide-track" id="slide-track" style="width: max-content;">
 
                             <div data-index="-1" class="slide-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 1024px;">
                                 <div class="slide-ad-image-box">
@@ -92,7 +93,7 @@
                                 </div>
                             </div>
 
-                            <div data-index="0" class="slide-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 1024px;">
+                            <div data-index="0" class="slide-slide slide-slide-active" tabindex="-1" aria-hidden="true" style="outline: none; width: 1024px;">
                                 <div class="slide-ad-image-box">
                                     <a href="https://exhibition.bunjang.co.kr/viewer/first_coupon_2025?utm_campaign=first_coupon_all_2025&utm_medium=topbanner&utm_source=bunjang" target="_blank">
                                         <img class="slide-ad-image" src="https://media.bunjang.co.kr/images/nocrop/1481666500_w1197.jpg">
@@ -142,7 +143,7 @@
 
                         </div>
                     </div>
-                    <button type="button" data-role="none" class="slide-arrow slide-next" style="display: block;">Next</button>
+                    <button type="button" data-role="none" class="slide-arrow slide-next" id="slide-next" style="display: block;">Next</button>
                 </div>
             </div>
             <div class="ad">
@@ -153,6 +154,8 @@
             </div>
             <section class="content-items">
                 <h2>오늘의 상품 추천</h2>
+                <div class="content-items-box" id="content-items-box">
+                </div>
             </section>
         </div>
 

@@ -51,11 +51,9 @@ function slidemove(id){
 }
 
 let autoslide = setInterval(slidenext, 5000);
-
 slidetrack.addEventListener("mouseover", () => {
     clearInterval(autoslide);
 });
-
 slidetrack.addEventListener("mouseleave", () => {
     autoslide = setInterval(slidenext, 5000);
 });
@@ -64,6 +62,33 @@ const scrollprev = document.getElementById("slide-prev");
 const scrollnext = document.getElementById("slide-next");
 scrollprev.addEventListener("click", slideprev);
 scrollnext.addEventListener("click", slidenext);
+
+const category = document.getElementById("nav-bottom-menu");
+const categorymenu = document.getElementById("nav-category");
+const categoryimg = document.getElementById("nav-bottom-menu-img");
+let categoryhover = false;
+category.addEventListener("mouseover", () => {
+    categorymenu.style.display = 'block';
+    categoryimg.src = '../assets/hamburgermenuactive.png';
+});
+
+category.addEventListener("mouseleave", () => {
+    setTimeout(() => {
+        if (categoryhover) return;
+        categorymenu.style.display = 'none';
+        categoryimg.src = '../assets/hamburgermenu.png';
+    }, 500);
+});
+
+categorymenu.addEventListener("mouseover", () => {
+    categoryhover = true;
+});
+
+categorymenu.addEventListener("mouseleave", () => {
+    categorymenu.style.display = 'none';
+    categoryimg.src = '../assets/hamburgermenu.png';
+    categoryhover = false;
+});
 
 const topscroll = document.getElementById("nav-side-item-top");
 topscroll.addEventListener("click", () => {

@@ -20,6 +20,12 @@ body {
     line-height: 1;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0px;
+}
+
 button {
     background-color: transparent;
     cursor: pointer;
@@ -277,6 +283,57 @@ img {
     font-size: 13px;
     color: rgb(102, 102, 102);
 }
+
+
+.content {
+    background: white;
+}
+
+.ad {
+    position: relative;
+    margin: 16px auto 0px;
+    max-width: 1024px;
+    height: 200px;
+}
+
+.ad-content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: block;
+    z-index: 0;
+}
+
+.ad-qr {
+    position: absolute;
+    width: 94px;
+    height: 94px;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 0px 7px 0px;
+    padding: 8px;
+    background-color: rgb(255, 255, 255);
+    z-index: 1;
+    top: 53px;
+    left: 155px;
+    bottom: 53px;
+}
+
+.ad-qr-content {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.content-items {
+    width: 1024px;
+    margin: auto;
+    padding: 3.5rem 0px 1.5rem;
+}
+
+.content-items h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
 
 .footer {
     display: flex;

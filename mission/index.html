@@ -11,119 +11,51 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet" />
 </head>
-
 <body>
   <header>
-  <div id="box1">
-    <a href = "https://m.bunjang.co.kr/login?rd=https%3A%2F%2Fexhibition.bunjang.co.kr%2Fretention-promotion"><button id="login">로그인/회원가입</button> </a>
-    <a href = "https://m.bunjang.co.kr/login?rd=https%3A%2F%2Fexhibition.bunjang.co.kr%2Fretention-promotion"><button id="store">내상점</button> </a>
-  </div>
+    <div class = "first-div">
+      <button class = "login-btn">로그인/회원가입</button>
+      <button class = "mystore-btn">내상점</button>
+    </div>
 
-  <div id="box">
-    <img id="logo" src="logo.png" alt="번개장터로고" />
-
-    <nav class="menu-container">
-        <img class="menu-img" src="category.png" alt="전체 카테고리" />
-        <div class="dropdown">
-          <a href="https://m.bunjang.co.kr/categories/310?&req_ref=popular_category">여성의류</a>
-          <a href="https://m.bunjang.co.kr/categories/320?&req_ref=popular_category">남성의류</a>
-          <a href="https://m.bunjang.co.kr/categories/405?&req_ref=popular_category">신발</a>
-          <a href="https://m.bunjang.co.kr/categories/430?&req_ref=popular_category">가방/지갑</a>
-          <a href="https://m.bunjang.co.kr/categories/421?&req_ref=popular_category">시계</a>
-          <a href="https://m.bunjang.co.kr/categories/422?&req_ref=popular_category">쥬얼리</a>
-          <a href="https://m.bunjang.co.kr/categories/600?&req_ref=popular_category">디지털</a>
-          <a href="https://m.bunjang.co.kr/categories/610?&req_ref=popular_category">가전제품</a>
-          <a href="https://m.bunjang.co.kr/categories/700?&req_ref=popular_category">스포츠</a>
-          <a href="https://m.bunjang.co.kr/categories/750?&req_ref=popular_category">오토바이</a>
-          <a href="https://m.bunjang.co.kr/categories/910?&req_ref=popular_category">굿즈</a>
-          <a href="https://m.bunjang.co.kr/categories/990?&req_ref=popular_category">예술</a>
-          <a href="https://m.bunjang.co.kr/categories/820?&req_ref=popular_category">식품</a>
+    <div class = "second-div">
+      
+      <div class="logo-group">
+        <img class="main-logo" src="https://static.bunjang.co.kr/web/ui/logo-full-ko.svg" alt="번개장터" />
+        
+        <div class="seller-center">
+          <img class="category-icon" src="https://m.bunjang.co.kr/pc-static/resource/9ddac97c001dd6e0c2eb.png" alt="카테고리 아이콘" />
+          <a class="center" href="https://seller.bunjang.co.kr/intro">번개장터 판매자센터</a>
         </div>
-      </nav>
+      </div>
 
-      
-    <div id="title-box">
-      <a href = "http://127.0.0.1:5500/3rd-task-clone/mission/index.html" id="title">번개장터 </a>
-      <a id="center" href="https://seller.bunjang.co.kr/intro">번개장터 판매자센터</a>
+      <div class = "search-container">
+        <input class = "search-box"  placeholder="상품명,지역명,@상점명 입력">
+        <img class = "search-icon" src= "https://m.bunjang.co.kr/pc-static/resource/2be3c66fa47ccd5ece2a.png" alt="검색 버튼 아이콘">
+      </div>
+
+      <div class = "sell-container">
+        <img class = "sell-icon" src="https://m.bunjang.co.kr/pc-static/resource/bcc7abb5d531bcf26033.png" alt="판매하기버튼 아이콘">
+        <a  class = "sell-title" href="">판매하기</a>
+      </div>
+
+      <div class = "mystore-container">
+        <img class = "mystore-icon" src = "https://m.bunjang.co.kr/pc-static/resource/31370b164bc5b7cc4fef.png" alt="내상점 아이콘">
+        <a  class = "mystore-title" href="">내상점</a>
+      </div>
+
+      <div class = "talk-container">
+        <img class = "talk-icon" src = "https://m.bunjang.co.kr/pc-static/resource/32554a59cf002b3def10.png" alt="번개톡 아이콘">
+        <a  class = "talk-title" href="">번개톡</a>
+      </div>
+
     </div>
 
-    <input id="search" placeholder="상품명,지역명,@상점명 입력" />
 
-    <div>
-      <button id="sell-button">
-        <img id="sellimg" src="sell.png" alt="판매 아이콘" />
-        <a href = "https://m.bunjang.co.kr/login?rd=https%3A%2F%2Fexhibition.bunjang.co.kr%2Fretention-promotion" id="sell">판매하기</a>
-      </button>
-    </div>
+  </header>
+</body>
 
-    <div>
-      <button id="store-button">
-        <img id="storeimg" src="mystore.png" alt="내상점 아이콘" />
-        <a  href = "https://m.bunjang.co.kr/login?rd=https%3A%2F%2Fexhibition.bunjang.co.kr%2Fretention-promotion"id="store1">내상점</a>
-      </button>
-    </div>
-
-    <div>
-      <button id="talk-button">
-        <img id="talkimg" src="talk.png" alt="번개톡 아이콘" />
-        <a href = "https://m.bunjang.co.kr/login?rd=https%3A%2F%2Fexhibition.bunjang.co.kr%2Fretention-promotion"id="talk">번개톡</a>
-      </button>
-    </div>
-  </div>
-</header>
-
-<main>
-
-  <section class="slider">
-    <a href="https://exhibition.bunjang.co.kr/viewer/first_coupon_2025?utm_campaign=first_coupon_all_2025&utm_medium=topbanner&utm_source=bunjang" target="_blank" class="active">
-      <img src="5000cupon.png" alt="cupon" />
-    </a>
-    <a href="https://exhibition.bunjang.co.kr/viewer/CUEMART_2504?utm_campaign=250401&utm_medium=topbanner&utm_source=bunjang" target="_blank">
-      <img src="cu.png" alt="Image 2" />
-    </a>
-    <a href="https://exhibition.bunjang.co.kr/viewer/tosspay_coupon2508?utm_campaign=tosspay_coupon2508&utm_medium=topbanner&utm_source=bunjang" target="_blank">
-      <img src="toss.png" alt="Image 3" />
-    </a>
-    <a href="https://m.bunjang.co.kr/login?rd=https%3A%2F%2Fexhibition.bunjang.co.kr%2Fretention-promotion" target="_blank">
-      <img src="samsung.png" alt="Image 4" />
-    </a>
-    <a href="https://exhibition.bunjang.co.kr/viewer/review_promotion_aug_250801?utm_campaign=20250801&utm_medium=topbanner&utm_source=bunjang" target="_blank">
-      <img src="review.png" alt="Image 5" />
-    </a>
-    <a href="https://exhibition.bunjang.co.kr/viewer/payevent2508?utm_campaign=20250801&utm_medium=event&utm_source=bunjang" target="_blank">
-      <img src="point.png" alt="Image 6" />
-    </a>
-  </section>
-
-    <aside>
-      <button id="pick" class = "pick">
-        찜한상품<br>   🩶 0
-      </button>
-
-      <button id="see" class = "see">
-        최근본상품<br>  ....... <br><br>👀<br>최근 본 상품<br>이<br>없습니다.
-      </button>
-      
-      <button id="TOP" class = "TOP">TOP</button>
-    </aside>
-  
-
-  <section>
-    <img id = "intro" src = "intro.png">
-  </section>
-
-  <section>
-    <h1 id = "recommend">오늘의 상품 추천</h1>
-  </section>
-
-  <section id="product-list"></section>
-
-</main>
-
-
-<footer>
-</footer>
-
+  <script src="data.js"></script>
   <script src="script.js"></script>
 </body>
 </html>

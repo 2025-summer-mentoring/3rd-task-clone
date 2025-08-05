@@ -18,8 +18,9 @@
       <button class = "login-btn">로그인/회원가입</button>
       <button class = "mystore-btn">내상점</button>
     </div>
+  </header>
 
-    <div class = "second-div">
+    <nav class = "second-div">
       
       <div class="logo-group">
         <img class="main-logo" src="https://static.bunjang.co.kr/web/ui/logo-full-ko.svg" alt="번개장터" />
@@ -49,9 +50,9 @@
         <img class = "talk-icon" src = "https://m.bunjang.co.kr/pc-static/resource/32554a59cf002b3def10.png" alt="번개톡 아이콘">
         <a  class = "talk-title" href="">번개톡</a>
       </div>
-    </div>
+    </nav>
 
-    <div class = "thrid-div">
+    <section class = "thrid-div">
       <div class = "slider">
         <img class = "cupon-img" src="https://media.bunjang.co.kr/images/nocrop/1481666500_w1197.jpg" alt = "쿠폰 이미지">
         <img class = "toss-img" src="https://media.bunjang.co.kr/images/nocrop/1494543721_w1197.jpg" alt = "토스 이미지">
@@ -61,9 +62,7 @@
       </div>
       <button class="left-btn">＜</button>
       <button class="right-btn">＞</button>
-
-
-    </div>
+    </section>
 
     <div>
       <img class = "QRcode-img" src="https://m.bunjang.co.kr/pc-static/resource/237e17f5cbe07edc8fff.png" alt = "QR 이미지">
@@ -72,7 +71,7 @@
 
 
 
-    <div>
+    <aside>
       <button class = "favorite-product">찜한상품
         <br>0</button>
       <img class = "heart-icon" src = "https://m.bunjang.co.kr/pc-static/resource/11198bb2dc24672fee03.png" alt = "하트아이콘">
@@ -81,12 +80,13 @@
       </button>
       <img class = "recent-product-icon" src = "https://m.bunjang.co.kr/pc-static/resource/2e45ed358cb7e120d519.png" alt = "눈 아이콘">
       <button class = "TOP-btn">TOP</button>
+    </aside>
+
+    <main>
       <h2 class = "today-recommend-product">오늘의 상품 추천</h2>
-    </div>
+      <div id="product-list" class="product-list"></div>
+    </main>
 
-    <div id="product-list" class="product-list"></div>
-
-  </header>
 </body>
 
   <script src="data.js"></script>

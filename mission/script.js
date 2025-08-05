@@ -24,3 +24,23 @@ setInterval(() => {
   index = (index + 1) % total;
   updateSlider();
 }, 5000);
+
+const container = document.getElementById("product-list");
+
+datas.map(item => {
+  const div = document.createElement("div");
+  div.className = "product";
+
+  const priceWithComma = item.price.toLocaleString();
+
+  div.innerHTML = `
+  <img src="${item.img}" alt="${item.name}">
+  <div class="product-info">
+    <div class="product-name">${item.name}</div>
+    <div class="product-price">${priceWithComma}원</div>
+    <div class="product-date">${item.date}일 전</div>
+  </div>
+`;
+
+  container.appendChild(div);
+});

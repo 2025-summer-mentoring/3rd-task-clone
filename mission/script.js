@@ -44,3 +44,22 @@ datas.map(item => {
 
   container.appendChild(div);
 });
+
+const modal = document.getElementById("loginModal");
+const closeBtn = document.querySelector(".close-btn");
+
+document.getElementById("sellBtn").addEventListener("click", openModal);
+document.getElementById("mystoreBtn").addEventListener("click", openModal);
+document.getElementById("talkBtn").addEventListener("click", openModal);
+document.getElementById("mystoreBtn2").addEventListener("click", openModal);
+document.getElementById("login2Btn").addEventListener("click", openModal);
+
+
+function openModal(e) {
+  e.preventDefault();
+  modal.style.display = "block";
+}
+
+closeBtn.addEventListener("click", () => {
+  modal.style.display = "none";
+});

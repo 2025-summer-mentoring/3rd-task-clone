@@ -14,7 +14,7 @@ body {
   margin-left : 1285px;
   padding : 0px 15px;
   padding-bottom : 15px;
-  
+  cursor: pointer;
 }
 
 .mystore-btn {
@@ -23,6 +23,7 @@ body {
   background : white;
   color : #838383;
   padding : 0px 15px;
+  cursor: pointer;
 }
 
 .second-div {
@@ -484,3 +485,112 @@ body {
   right : -580px;
   color : gray;
 }
+
+.modal {
+  display: none; 
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+  background-color: white;
+  margin: 15% auto;
+  padding: 30px;
+  border-radius: 10px;
+  width: 400px;
+  height : 500px;
+  text-align: center;
+  position: relative;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 10000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.6);
+}
+
+.modal-content h2 {
+  margin-top: 15px;
+}
+
+.modal-content p {
+  margin: 10px 0 20px;
+  color: #555;
+  font-size: 14px;
+}
+
+.modal-content button {
+  width: 70%;
+  margin: 6px 0;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.login-btn-kakao {
+  background-color: #d0d0d0;
+}
+.login-btn-facebook {
+  background-color: #d0d0d0;
+}
+.login-btn-naver {
+  background-color: #d0d0d0;
+}
+.login-btn-phone {
+  background-color: #d0d0d0;
+}
+
+.login-help {
+  display: block;
+  font-size: 11px;
+  margin-top:100px;
+  color: #888;
+}
+
+.login-help-link {
+  color: inherit;
+}
+
+.modal-content button:hover {
+  filter: brightness(95%);
+  transition: background-color 0.2s ease, filter 0.2s ease;
+}
+
+.login-btn-kakao:hover {
+  background-color: #e6cf00; 
+}
+
+.login-btn-facebook:hover {
+  background-color: #375a9d;
+}
+
+.login-btn-naver:hover {
+  background-color: #03b14c; 
+}
+
+.login-btn-phone:hover {
+  background-color: #858585; 
+}
+
+

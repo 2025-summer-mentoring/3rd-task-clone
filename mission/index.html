@@ -15,8 +15,8 @@
 
   <header>
     <div class = "first-div">
-      <button class = "login-btn">로그인/회원가입</button>
-      <button class = "mystore-btn">내상점</button>
+      <button class = "login-btn" id = "login2Btn">로그인/회원가입</button>
+      <button class = "mystore-btn" id = "mystoreBtn">내상점</button>
     </div>
   </header>
 
@@ -36,20 +36,59 @@
         <img class = "search-icon" src= "https://m.bunjang.co.kr/pc-static/resource/2be3c66fa47ccd5ece2a.png" alt="검색 버튼 아이콘">
       </div>
 
-      <div class = "sell-container">
+      <div class = "sell-container" id = "sellBtn">
         <img class = "sell-icon" src="https://m.bunjang.co.kr/pc-static/resource/bcc7abb5d531bcf26033.png" alt="판매하기버튼 아이콘">
         <a  class = "sell-title" href="">판매하기</a>
       </div>
 
-      <div class = "mystore-container">
+      <div class = "mystore-container" id = "mystoreBtn2">
         <img class = "mystore-icon" src = "https://m.bunjang.co.kr/pc-static/resource/31370b164bc5b7cc4fef.png" alt="내상점 아이콘">
         <a  class = "mystore-title" href="">내상점</a>
       </div>
 
-      <div class = "talk-container">
+      <div class = "talk-container" id = "talkBtn">
         <img class = "talk-icon" src = "https://m.bunjang.co.kr/pc-static/resource/32554a59cf002b3def10.png" alt="번개톡 아이콘">
         <a  class = "talk-title" href="">번개톡</a>
       </div>
+
+      <div id="modal" class="modal">
+        <div class="modal-content">
+          <h2 id="modal-title"></h2>
+          <p id="modal-body"></p>
+        </div>
+      </div>
+
+
+      <div id="loginModal" class="modal">
+        <div class="modal-content">
+          <span class="close-btn">&times;</span>
+          <img src="https://static.bunjang.co.kr/web/ui/logo-icon.svg" alt="번개로고" width="30" />
+          <h2>번개장터로 중고거래 시작하기</h2>
+          <p>간편하게 가입하고 상품을 확인하세요</p>
+
+        <a href = "https://accounts.kakao.com/login/?login_type=normal&continue=https%3A%2F%2Fkauth.kakao.com%2Foauth%2Fauthorize%3Fclient_id%3D30314a9cf2f3bea24d7ee29a4258543e%26state%3DeyJrYWthb1JlZGlyZWN0aW9uIjoiLyJ9%26redirect_uri%3Dhttps%253A%252F%252Fm.bunjang.co.kr%252Fkakao-bridge%26response_type%3Dcode%26auth_tran_id%3D1KQShYIPHdPBBuoVqkAkm4J.5XTn2C0_QutoO_Bynx2~RxU0PyIP-uHenGrm%26ka%3Dsdk%252F2.7.2%2520os%252Fjavascript%2520sdk_type%252Fjavascript%2520lang%252Fko-KR%2520device%252FMacIntel%2520origin%252Fhttps%25253A%25252F%25252Fm.bunjang.co.kr%26is_popup%3Dfalse%26through_account%3Dtrue&talk_login=hidden#login">
+          <button class="login-btn-kakao">카카오로 이용하기</button>
+        </a>
+
+        <a href = "https://www.facebook.com/login.php?skip_api_login=1&api_key=1515207441905975&kid_directed_site=0&app_id=1515207441905975&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fv12.0%2Fdialog%2Foauth%3Fapp_id%3D1515207441905975%26cbt%3D1754437011463%26channel_url%3Dhttps%253A%252F%252Fstaticxx.facebook.com%252Fx%252Fconnect%252Fxd_arbiter%252F%253Fversion%253D46%2523cb%253Df24a41241734c0c9e%2526domain%253Dm.bunjang.co.kr%2526is_canvas%253Dfalse%2526origin%253Dhttps%25253A%25252F%25252Fm.bunjang.co.kr%25252Ff7babe823a5b4b44a%2526relation%253Dopener%26client_id%3D1515207441905975%26display%3Dpopup%26domain%3Dm.bunjang.co.kr%26e2e%3D%257B%257D%26fallback_redirect_uri%3Dhttps%253A%252F%252Fm.bunjang.co.kr%252F%26locale%3Den_US%26logger_id%3Df2c4becae948e9669%26origin%3D1%26redirect_uri%3Dhttps%253A%252F%252Fstaticxx.facebook.com%252Fx%252Fconnect%252Fxd_arbiter%252F%253Fversion%253D46%2523cb%253Df80231e86726afbbb%2526domain%253Dm.bunjang.co.kr%2526is_canvas%253Dfalse%2526origin%253Dhttps%25253A%25252F%25252Fm.bunjang.co.kr%25252Ff7babe823a5b4b44a%2526relation%253Dopener%2526frame%253Df0c62db9591e12017%26response_type%3Dtoken%252Csigned_request%252Cgraph_domain%26scope%3Dpublic_profile%252Cemail%26sdk%3Djoey%26version%3Dv12.0%26ret%3Dlogin%26fbapp_pres%3D0%26tp%3Dunspecified&cancel_url=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Df80231e86726afbbb%26domain%3Dm.bunjang.co.kr%26is_canvas%3Dfalse%26origin%3Dhttps%253A%252F%252Fm.bunjang.co.kr%252Ff7babe823a5b4b44a%26relation%3Dopener%26frame%3Df0c62db9591e12017%26error%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied&display=popup&locale=ko_KR&pl_dbl=0">
+          <button class="login-btn-facebook">페이스북으로 이용하기</button>
+        </a>
+
+        <a href = "https://nid.naver.com/nidlogin.login?oauth_token=RJ62SHxfK3wGkdwE7H&consumer_key=O0ySKrDRM9n1ki3X8WOw&logintp=oauth2&nurl=https%3A%2F%2Fnid.naver.com%2Foauth2.0%2Fauthorize%3Fresponse_type%3Dtoken%26state%3Daa91c482-877f-4d4c-9e32-2dbdade76c00%26client_id%3DO0ySKrDRM9n1ki3X8WOw%26redirect_uri%3Dhttps%253A%252F%252Fm.bunjang.co.kr%252Fnaver_oauth%26locale%3Dko_KR%26inapp_view%3D%26oauth_os%3D&locale=ko_KR&inapp_view=&svctype=">
+          <button class="login-btn-naver">네이버로 이용하기</button>
+        </a>
+
+        <a href = "https://m.bunjang.co.kr/signup?rd_url=%2F">
+          <button class="login-btn-phone">본인인증으로 이용하기</button>
+        </a>
+
+          <small class="login-help">
+            도움이 필요하면 <a class = "login-help-link" href="mailto:help@bunjang.co.kr">이메일</a> 또는 고객센터(1670-2910)로 문의 부탁드립니다.
+            <br>고객센터 운영시간: 09~18시 (점심시간 12~13시, 주말/공휴일 제외)
+          </small>
+        </div>
+      </div>
+            
     </nav>
 
     <section class = "thrid-div">

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>⚡️번개장터</title>
+
+  <link rel="stylesheet" href="style.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <header>
+    <div class = "first-div">
+      <button class = "login-btn" id = "login2Btn">로그인/회원가입</button>
+      <button class = "mystore-btn" id = "mystoreBtn">내상점</button>
+    </div>
+  </header>
+
+    <nav class = "second-div">
+      
+      <div class="logo-group">
+        <img class="main-logo" src="https://static.bunjang.co.kr/web/ui/logo-full-ko.svg" alt="번개장터" />
+        
+        <div class="seller-center">
+          <img class="category-icon" src="https://m.bunjang.co.kr/pc-static/resource/9ddac97c001dd6e0c2eb.png" alt="카테고리 아이콘" />
+          <a class="center" href="https://seller.bunjang.co.kr/intro">번개장터 판매자센터</a>
+        </div>
+      </div>
+
+      <div class = "search-container">
+        <input class = "search-box"  placeholder="상품명,지역명,@상점명 입력">
+        <img class = "search-icon" src= "https://m.bunjang.co.kr/pc-static/resource/2be3c66fa47ccd5ece2a.png" alt="검색 버튼 아이콘">
+      </div>
+
+      <div class = "sell-container" id = "sellBtn">
+        <img class = "sell-icon" src="https://m.bunjang.co.kr/pc-static/resource/bcc7abb5d531bcf26033.png" alt="판매하기버튼 아이콘">
+        <a  class = "sell-title" href="">판매하기</a>
+      </div>
+
+      <div class = "mystore-container" id = "mystoreBtn2">
+        <img class = "mystore-icon" src = "https://m.bunjang.co.kr/pc-static/resource/31370b164bc5b7cc4fef.png" alt="내상점 아이콘">
+        <a  class = "mystore-title" href="">내상점</a>
+      </div>
+
+      <div class = "talk-container" id = "talkBtn">
+        <img class = "talk-icon" src = "https://m.bunjang.co.kr/pc-static/resource/32554a59cf002b3def10.png" alt="번개톡 아이콘">
+        <a  class = "talk-title" href="">번개톡</a>
+      </div>
+
+      <div id="modal" class="modal">
+        <div class="modal-content">
+          <h2 id="modal-title"></h2>
+          <p id="modal-body"></p>
+        </div>
+      </div>
+
+
+      <div id="loginModal" class="modal">
+        <div class="modal-content">
+          <span class="close-btn">&times;</span>
+          <img src="https://static.bunjang.co.kr/web/ui/logo-icon.svg" alt="번개로고" width="30" />
+          <h2>번개장터로 중고거래 시작하기</h2>
+          <p>간편하게 가입하고 상품을 확인하세요</p>
+
+        <a href = "https://accounts.kakao.com/login/?login_type=normal&continue=https%3A%2F%2Fkauth.kakao.com%2Foauth%2Fauthorize%3Fclient_id%3D30314a9cf2f3bea24d7ee29a4258543e%26state%3DeyJrYWthb1JlZGlyZWN0aW9uIjoiLyJ9%26redirect_uri%3Dhttps%253A%252F%252Fm.bunjang.co.kr%252Fkakao-bridge%26response_type%3Dcode%26auth_tran_id%3D1KQShYIPHdPBBuoVqkAkm4J.5XTn2C0_QutoO_Bynx2~RxU0PyIP-uHenGrm%26ka%3Dsdk%252F2.7.2%2520os%252Fjavascript%2520sdk_type%252Fjavascript%2520lang%252Fko-KR%2520device%252FMacIntel%2520origin%252Fhttps%25253A%25252F%25252Fm.bunjang.co.kr%26is_popup%3Dfalse%26through_account%3Dtrue&talk_login=hidden#login">
+          <button class="login-btn-kakao">카카오로 이용하기</button>
+        </a>
+
+        <a href = "https://www.facebook.com/login.php?skip_api_login=1&api_key=1515207441905975&kid_directed_site=0&app_id=1515207441905975&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fv12.0%2Fdialog%2Foauth%3Fapp_id%3D1515207441905975%26cbt%3D1754437011463%26channel_url%3Dhttps%253A%252F%252Fstaticxx.facebook.com%252Fx%252Fconnect%252Fxd_arbiter%252F%253Fversion%253D46%2523cb%253Df24a41241734c0c9e%2526domain%253Dm.bunjang.co.kr%2526is_canvas%253Dfalse%2526origin%253Dhttps%25253A%25252F%25252Fm.bunjang.co.kr%25252Ff7babe823a5b4b44a%2526relation%253Dopener%26client_id%3D1515207441905975%26display%3Dpopup%26domain%3Dm.bunjang.co.kr%26e2e%3D%257B%257D%26fallback_redirect_uri%3Dhttps%253A%252F%252Fm.bunjang.co.kr%252F%26locale%3Den_US%26logger_id%3Df2c4becae948e9669%26origin%3D1%26redirect_uri%3Dhttps%253A%252F%252Fstaticxx.facebook.com%252Fx%252Fconnect%252Fxd_arbiter%252F%253Fversion%253D46%2523cb%253Df80231e86726afbbb%2526domain%253Dm.bunjang.co.kr%2526is_canvas%253Dfalse%2526origin%253Dhttps%25253A%25252F%25252Fm.bunjang.co.kr%25252Ff7babe823a5b4b44a%2526relation%253Dopener%2526frame%253Df0c62db9591e12017%26response_type%3Dtoken%252Csigned_request%252Cgraph_domain%26scope%3Dpublic_profile%252Cemail%26sdk%3Djoey%26version%3Dv12.0%26ret%3Dlogin%26fbapp_pres%3D0%26tp%3Dunspecified&cancel_url=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Df80231e86726afbbb%26domain%3Dm.bunjang.co.kr%26is_canvas%3Dfalse%26origin%3Dhttps%253A%252F%252Fm.bunjang.co.kr%252Ff7babe823a5b4b44a%26relation%3Dopener%26frame%3Df0c62db9591e12017%26error%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied&display=popup&locale=ko_KR&pl_dbl=0">
+          <button class="login-btn-facebook">페이스북으로 이용하기</button>
+        </a>
+
+        <a href = "https://nid.naver.com/nidlogin.login?oauth_token=RJ62SHxfK3wGkdwE7H&consumer_key=O0ySKrDRM9n1ki3X8WOw&logintp=oauth2&nurl=https%3A%2F%2Fnid.naver.com%2Foauth2.0%2Fauthorize%3Fresponse_type%3Dtoken%26state%3Daa91c482-877f-4d4c-9e32-2dbdade76c00%26client_id%3DO0ySKrDRM9n1ki3X8WOw%26redirect_uri%3Dhttps%253A%252F%252Fm.bunjang.co.kr%252Fnaver_oauth%26locale%3Dko_KR%26inapp_view%3D%26oauth_os%3D&locale=ko_KR&inapp_view=&svctype=">
+          <button class="login-btn-naver">네이버로 이용하기</button>
+        </a>
+
+        <a href = "https://m.bunjang.co.kr/signup?rd_url=%2F">
+          <button class="login-btn-phone">본인인증으로 이용하기</button>
+        </a>
+
+          <small class="login-help">
+            도움이 필요하면 <a class = "login-help-link" href="mailto:help@bunjang.co.kr">이메일</a> 또는 고객센터(1670-2910)로 문의 부탁드립니다.
+            <br>고객센터 운영시간: 09~18시 (점심시간 12~13시, 주말/공휴일 제외)
+          </small>
+        </div>
+      </div>
+            
+    </nav>
+
+    <section class = "thrid-div">
+      <div class = "slider">
+        <img class = "cupon-img" src="https://media.bunjang.co.kr/images/nocrop/1481666500_w1197.jpg" alt = "쿠폰 이미지">
+        <img class = "toss-img" src="https://media.bunjang.co.kr/images/nocrop/1494543721_w1197.jpg" alt = "토스 이미지">
+        <img class = "samsung-img" src="https://media.bunjang.co.kr/images/nocrop/1471698603_w1197.jpg" alt = "삼성 이미지">
+        <img class = "review-img" src="https://media.bunjang.co.kr/images/nocrop/1494535670_w1197.jpg" alt = "리뷰 이미지">
+        <img clss = "point-img" src="https://media.bunjang.co.kr/images/nocrop/1494605220_w1197.jpg" alt = "결제/할인/포인트 이미지">
+      </div>
+      <button class="left-btn">＜</button>
+      <button class="right-btn">＞</button>
+    </section>
+
+    <div>
+      <img class = "QRcode-img" src="https://m.bunjang.co.kr/pc-static/resource/237e17f5cbe07edc8fff.png" alt = "QR 이미지">
+      <img class = "QR">
+    </div>
+
+
+
+    <aside>
+      <button class = "favorite-product">찜한상품
+        <br>0</button>
+      <img class = "heart-icon" src = "https://m.bunjang.co.kr/pc-static/resource/11198bb2dc24672fee03.png" alt = "하트아이콘">
+      <button class ="recent-product">최근본상품
+        <br>..........<br><br><br><br>최근 본 상품<br>이<br>없습니다.<br><br>
+      </button>
+      <img class = "recent-product-icon" src = "https://m.bunjang.co.kr/pc-static/resource/2e45ed358cb7e120d519.png" alt = "눈 아이콘">
+      <button class = "TOP-btn">TOP</button>
+    </aside>
+
+    <main>
+      <h2 class = "today-recommend-product">오늘의 상품 추천</h2>
+      <div id="product-list" class="product-list"></div>
+    </main>
+
+    <footer class = "fourth-div">
+      <a  class = "introduce-company" href = "https://bgzt.co.kr/">회사소개 </a>
+      <a  class = "utilization-policy" href = "https://terms.bunjang.co.kr/terms/service.html">이용약관 </a>
+      <a  class = "operational-policy" href = "https://terms.bunjang.co.kr/terms/service-policy.html">운영정책 </a>
+      <a  class = "personal-information" href = "https://terms.bunjang.co.kr/terms/privacy.html">개인정보처리방침 </a>
+      <a  class = "youth-policy" href = "https://terms.bunjang.co.kr/terms/youth-policy.html">청소년보호정책 </a>
+      <a  class = "advertising-partnership" href = "https://ads-partner.bunjang.co.kr/">광고제휴</a>
+    </footer>
+
+    <div class = "fifth-div">
+      <p><h5>번개장터(주) 사업자정보</h5>대표이사 : 최재화, 강승현   |   개인정보보호책임자 : 박병성<br>사업자등록번호 : 113-86-45836   |   통신판매업신고 : 2019-서울서초-1126
+        <br>호스팅서비스 제공자 : Amazon Web Services (AWS)<br>EMAIL : help@bunjang.co.kr   |   FAX : 02-598-8241<br>
+        주소 : 서울특별시 서초구 서초대로 38길 12, 7, 10층(서초동, 마제스타시티, 힐스테이트 서리풀)<br><a class = "business-check" href = "https://www.ftc.go.kr/bizCommPop.do?wrkr_no=1138645836">사업자 정보 확인</a>
+        <br><br><h5>번개장터(주)센터필드점   |   최재화, 강승현   |   808-85-01905</h5>서울특별시 강남구 테헤란로 231, 쇼핑몰동 1층 W124호(역삼동)(역삼동, 센터필드)
+      </p>
+    </div>
+
+    <div class = sixth-div>
+      <p>고객센터 > <br><h2>1670-2910</h2>운영시간 9시 - 18시 (주말/공휴일 휴무, 점심시간 12시 - 13시)<br><a class = "notice" href = "https://help.bunjang.co.kr/notice?exposure=main">공지사항 </a><a class = "contact-us" href = "https://m.bunjang.co.kr/"> 1:1 문의하기 </a>
+      <a class = "question" href = "https://help.bunjang.co.kr/faq"> 자주 묻는 질문</a><br><br><h5>우리은행 채무지급보증 안내</h5>>번개장터㈜는 회사가 직접 판매하는 상품에 한하여, 고객님의 현금 결제 금액에 대해 우리은행과 채무지급보
+    <br>증 계약을 체결하여 안전거래를 보장하고 있습니다.<br><a class = "service" href = "https://terms.bunjang.co.kr/terms/wooriguarantee.html">서비스 가입사실 확인</a></p>
+    </div>
+
+    <div class = "seventh-div">
+      <img class = "isms" src = "https://m.bunjang.co.kr/pc-static/resource/ee757469a142ab4f2f48.png">
+      <a class = "isms-title" href = "https://isms.kisa.or.kr/main/ispims/issue/?certificationMode=list&crtfYear=&searchCondition=2&searchKeyword=%EB%B2%88%EA%B0%9C%EC%9E%A5%ED%84%B0+%EC%A3%BC%EC%8B%9D%ED%9A%8C%EC%82%AC&__encrypted=U8oaEwTLg12yqNDZuCwRPMiDRLgcrZjlbxomU5uctoZc1kXWONBhXaf0KhG%2BaV6wpp2zSeTry6yKT1QpQPP4n6Wl4JbzPyTKSn7s1FoRr90UnnwTp%2BW928V1TpyMuwFVMU8D270RkIg564CRAF0bUnkvpnfyAxjhbyn0pSpjvw%2BMlXuoQnR3oJUfvVi%2B1dac8Gnd7jHhSmiDLOX09CuWhVRPx40RuMcaT%2FHbItyyZvQECWvcAvRb36C1zB%2FnwnWRJNfv74iaCKBgpNE%2BERnypNyBfcqQSKf%2BfDsW9aHcpTOO1K747YgBrg%3D%3D"><br>[인증범위] 번개장터 중고거래 플랫폼 서비스 운영(심사받지 않은 물리적 인프라 제외)</a>
+      <br><a class = "isms-title2" href = "https://isms.kisa.or.kr/main/ispims/issue/?certificationMode=list&crtfYear=&searchCondition=2&searchKeyword=%EB%B2%88%EA%B0%9C%EC%9E%A5%ED%84%B0+%EC%A3%BC%EC%8B%9D%ED%9A%8C%EC%82%AC&__encrypted=U8oaEwTLg12yqNDZuCwRPMiDRLgcrZjlbxomU5uctoZc1kXWONBhXaf0KhG%2BaV6wpp2zSeTry6yKT1QpQPP4n6Wl4JbzPyTKSn7s1FoRr90UnnwTp%2BW928V1TpyMuwFVMU8D270RkIg564CRAF0bUnkvpnfyAxjhbyn0pSpjvw%2BMlXuoQnR3oJUfvVi%2B1dac8Gnd7jHhSmiDLOX09CuWhVRPx40RuMcaT%2FHbItyyZvQECWvcAvRb36C1zB%2FnwnWRJNfv74iaCKBgpNE%2BERnypNyBfcqQSKf%2BfDsW9aHcpTOO1K747YgBrg%3D%3D">[유효기간] 2024.05.18 ~ 2027.05.17</a>
+      <p class = "last-title" >번개장터㈜는 통신판매중개자이며, 통신판매의 당사자가 아닙니다. 전자상거래 등에서의 소비자보호에 관한 법률 등 관<br>련 법령 및 번개장터㈜의 약관에 따라 상품, 상품정보, 거래에 관한 책임은 개별 판매자에게 귀속하고, 번개장터㈜는 원칙<br>
+        적으로 회원간 거래에 대하여 책임을 지지 않습니다. 다만, 번개장터㈜가 직접 판매하는 상품에 대한 책임은 번개장터㈜<br>에게 귀속합니다.</p>
+    </div>
+
+
+</body>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

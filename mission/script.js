@@ -30,7 +30,7 @@
   {
     id: 5,
     img: "https://raw.githubusercontent.com/2025-summer-mentoring/3rd-task-clone/main/assets/iphone.png",
-    name: "아이폰 16 프로맥스",
+    name: "아이폰16 프로맥스",
     price: 1013000,
     date: 1
   },

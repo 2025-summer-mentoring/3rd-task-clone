@@ -1,8 +1,5 @@
 const preprocessed_data = datas.map((x) => {
     x.img = "." + x.img;
-    if (x.name.length > 15) {
-        x.name = x.name.slice(0, 16) + "..."; 
-    }
     x.price = x.price.toLocaleString('ko-KR');
     x.date = x.date.toString() + "일 전"
     return x;

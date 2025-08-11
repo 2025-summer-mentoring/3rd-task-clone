@@ -349,6 +349,9 @@ figure {
     font-size: 13px;
     font-weight: 400;
     padding: 14px 6px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden; 
 }
 
 .product-detail {

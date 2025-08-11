@@ -39,7 +39,7 @@ img {
     padding: 10px 16px;
 }
 
-#under-header {
+header {
     display: flex;
     justify-content: center;
     border-bottom: 1px #eee solid;

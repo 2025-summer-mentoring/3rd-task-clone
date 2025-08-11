@@ -70,3 +70,5 @@ const datas = [
     date: 3
   }
 ]
+
+console.log("hi")

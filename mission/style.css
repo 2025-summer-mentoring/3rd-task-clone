@@ -79,6 +79,7 @@ header {
 #searching>input {
     width: 410px;
     border: none;
+    outline: none;
 }
 
 #searching>a>img {

@@ -6,6 +6,7 @@
     price: 1100000,
     date: 3
   },
+
   {
     id: 2,
     img: "https://raw.githubusercontent.com/2025-summer-mentoring/3rd-task-clone/main/assets/tire.png",
@@ -13,6 +14,7 @@
     price: 300000,
     date: 1
   },
+
   {
     id: 3,
     img: "https://raw.githubusercontent.com/2025-summer-mentoring/3rd-task-clone/main/assets/hoodie.png",
@@ -20,6 +22,7 @@
     price: 336000,
     date: 1
   },
+
   {
     id: 4,
     img: "https://raw.githubusercontent.com/2025-summer-mentoring/3rd-task-clone/main/assets/bicycle.png",
@@ -27,6 +30,7 @@
     price: 300000,
     date: 4
   },
+
   {
     id: 5,
     img: "https://raw.githubusercontent.com/2025-summer-mentoring/3rd-task-clone/main/assets/iphone.png",
@@ -34,6 +38,7 @@
     price: 1013000,
     date: 1
   },
+
   {
     id: 6,
     img: "https://raw.githubusercontent.com/2025-summer-mentoring/3rd-task-clone/main/assets/polo.png",
@@ -41,6 +46,7 @@
     price: 104000,
     date: 5
   },
+
   {
     id: 7,
     img: "https://raw.githubusercontent.com/2025-summer-mentoring/3rd-task-clone/main/assets/golf.png",
@@ -48,6 +54,7 @@
     price: 10200000,
     date: 3
   },
+
   {
     id: 8,
     img: "https://raw.githubusercontent.com/2025-summer-mentoring/3rd-task-clone/main/assets/gold.png",
@@ -55,6 +62,7 @@
     price: 5300000,
     date: 9
   },
+  
   {
     id: 9,
     img: "https://raw.githubusercontent.com/2025-summer-mentoring/3rd-task-clone/main/assets/bmw.png",
@@ -62,6 +70,7 @@
     price: 8300000,
     date: 7
   },
+
   {
     id: 10,
     img: "https://raw.githubusercontent.com/2025-summer-mentoring/3rd-task-clone/main/assets/victor.png",

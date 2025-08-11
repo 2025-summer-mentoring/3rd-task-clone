@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>번개장터</title>
+	<link rel="stylesheet" href="./style.css">
+	<link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon">
+</head>
+<body>
+	<div id="upper-header">
+		<div id="upper-header-contents" class="content-centering">
+			<a href="./" id="sign" class="upper-header-content">로그인/회원가입</a>
+			<a href="./" id="my-shop" class="upper-header-content">내상점</a>
+		</div>
+	</div>
+	<header>
+		<div id="under-header-contents" class="content-centering">
+			<div id="base-header">
+				<a id="main-logo" href="./">
+					<img src="../assets/logo.svg" alt="번개장터 로고"></img>
+				</a>
+				<div id="searching">
+					<input type="text" placeholder="상품명, 지역명, @상점명 입력"></input>
+					<a id="reading-glass" href="./">
+						<img src="../assets/reading_glass.png" alt="돋보기 로고"></img>
+					</a>
+				</div>
+				<div id="main-functions">
+					<a href="./" id="selling" class="main-function">
+						<img src="../assets/selling.png" alt="판매하기 로고"></img>
+						<p>판매하기</p>
+					</a>
+					<a href="./" id="myshop" class="main-function">
+						<img src="../assets/myshop.png" alt="내 상점 로고"></img>
+						<p>내상점</p>
+					</a>
+					<a href="./" id="thtalk" class="main-function">
+						<img src="../assets/thtalk.png" alt="번개톡 로고"></img>
+						<p>번개톡</p>
+					</a>
+				</div>
+			</div>
+			<div id="sub-header">
+				<div id="category">
+					<div class="categorys">
+						<div><h3>전체 카테고리</h3></div>
+						<ul id="categorys-list"></ul>
+					</div>
+				</div>
+				<a id="seller-center" href="./">번개장터 판매자센터</a>
+			</div>
+			<aside>
+				<div id="bookmarked">
+					<h6>찜한상품</h6>
+					<a href="./" id="love">
+						<img src="../assets/love.png" alt="좋아요 이미지"></img>
+						<p id="love-count">0</p>
+					</a>
+				</div>
+				<div id="recentry">
+					<div id="recentry-title">
+						<p>최근본상품</p>
+						<div></div>
+					</div>
+					<div id="recentry-contents">
+						<img src="../assets/eye.png" alt="눈과 눈꺼풀 모양 로고"></img>
+						<p>최근 본 상품이<br></br>없습니다.</p>
+					</div>
+				</div>
+				<div id="move-top">TOP</div>
+			</aside>
+		</div>
+	</header>
+	<main>
+		<section id="ads" class="content-centering">
+			<a href="./">
+				<img src="../assets/ads1.webp" alt="광고"></img>
+			</a>
+		</section>
+		<section id="ad" class="content-centering">
+			<img src="../assets/ad.png" alt="광고"></img>
+			<div id="ad_qrcode"><img src="../assets/ad_qr.png" alt="QR 코드"></img></div>
+		</section>
+		<section id="items" class="content-centering">
+			<h2>오늘의 상품 추천</h2>
+			<div id="products"></div>
+		</section>
+	</main>
+	<nav>
+		<div class="content-centering">
+			<a href="./" class="navigater">회사소개</a>
+			<a href="./" class="navigater">이용약관</a>
+			<a href="./" class="navigater">운영정책</a>
+			<a href="./" class="navigater"><b>개인정보보호방침</b></a>
+			<a href="./" class="navigater">청소년보호정책</a>
+			<a href="./" class="navigater">광고제휴</a>
+		</div>
+	</nav>
+	<footer>
+		<div class="content-centering">
+			<div id="upper-footer">
+				<div>
+					<div class="footer-content">
+						<h4>번개장터(주) 사업자정보</h4>
+						<p>대표이사 : 최재화, 강승현   |   개인정보보호책임자 : 박병성</p>
+						<p>사업자등록번호 : 113-86-45836   |   통신판매업신고 : 2019-서울서초-1126</p>
+						<p>호스팅서비스 제공자 : Amazon Web Services (AWS)</p>
+						<p>EMAIL : help@bunjang.co.kr   |   FAX : 02-598-8241</p>
+						<p>주소 : 서울특별시 서초구 서초대로 38길 12, 7, 10층(서초동, 마제스타시티, 힐스테이트 서리풀)</p>
+						<a href="./">사업자정보 확인</a>
+					</div>
+					<div class="footer-content">
+						<p><b>번개장터(주)센터필드점</b>   |   최재화, 강승현   |   808-85-01905</p>
+						<p>서울특별시 강남구 테헤란로 231, 쇼핑몰동 1층 W124호(역삼동)(역삼동, 센터필드)</p>
+					</div>
+				</div>
+				<div>
+					<div class="footer-content">
+						<h4>고객센터</h4>
+						<h3>1670-2910</h3>
+						<p>운영시간 9시 - 18시 (주말/공휴일 휴무, 점심시간 12시 - 13시)</p>
+						<div id="customer-service">
+							<a href="./">공지사항</a>
+							<a href="./">1:1 문의하기</a>
+							<a href="./">자주 묻는 질문</a>
+						</div>
+					</div>
+					<div class="footer-content">
+						<h4>우리은행 채무지급보증 안내</h4>
+						<p>번개장터㈜는 회사가 직접 판매하는 상품에 한하여, 고객님의 현금 결제 금액에 대해 우리은행과 채무지급보증 계약을 체결하여 안전거래를 보장하고 있습니다.</p>
+						<a href="./">서비스 가입사실 확인</a>
+						<p>Ⓒ Bungaejangter. Inc All rights reserved.</p>
+					</div>
+				</div>
+			</div>
+			<div id="under-footer">
+				<a id="isms" href="./">
+					<img src="../assets/isms_logo.png" alt="ISMS 인증 로고"></img>
+					<div>
+						<p class="cert-content">[인증범위] 번개장터 중고거래 플랫폼 서비스 운영(심사받지 않은 물리적 인프라 제외)</p>
+						<p class="cert-content">[유효기간] 2024.05.18 ~ 2027.05.17</p>
+					</div>
+				</a>
+				<div>
+					<p>번개장터㈜는 통신판매중개자이며, 통신판매의 당사자가 아닙니다. 전자상거래 등에서의 소비자보호에 관한 법률 등 관련 법령 및 번개장터㈜의 약관에 따라 상품, 상품정보, 거래에 관한 책임은 개별 판매자에게 귀속하고, 번개장터㈜는 원칙적으로 회원간 거래에 대하여 책임을 지지 않습니다. 다만, 번개장터㈜가 직접 판매하는 상품에 대한 책임은 번개장터㈜에게 귀속합니다.</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script src="../data.js"></script>
+	<script src="./script.js"></script>
+</body>
+</html>
